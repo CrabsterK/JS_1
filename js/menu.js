@@ -100,8 +100,14 @@ var menuHTML =    "<ul>" +
             "</li>" +
             "<li><a href=\"media.html\">@media</a></li>" +
             "<li><a href=\"FBLM.html\">FBLM</a></li>" +
-            "<li><a href=\"javascript.html\">JS</a></li>" +
-
+            "<ul>"+
+            "<li><a href=\"#\">JS</a>" +
+                "<ul>" +
+                    "<li><a href=\"javascript.html\">Część I</a></li>" +
+                    "<li><a href=\"#\">Część II</a></li>" +
+                "</ul>" +
+            "</li>" +
+            
         "</ul>" ;
 
 document.getElementById("menu").innerHTML = menuHTML;

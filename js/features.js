@@ -95,3 +95,6 @@ function funFor(){
     document.getElementById("ifExample").innerHTML += i +"</br>";
     }
 }
+function windowEvent(){
+   "use strict"; document.getElementById("winListenerExample").innerHTML = Math.random();
+}

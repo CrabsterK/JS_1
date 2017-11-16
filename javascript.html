@@ -42,21 +42,31 @@
                 <button onclick="funAlert()">Na dobry dzień!</button>
             </article>
             
-            <article id="winListenerExample">
+            <article>
                 <a id="windowListener"></a>
                 <h2>window.addEventListener()</h2>
-                <p>Wykonuje funkcje na zdarzenia dla okna przeglądarki lub innego elementu </p>
-                <script>funWinListener()</script>
-                <p id="winListenerExample2"></p>
+                <p>Wykonuje funkcje na zdarzenia dla okna przeglądarki </p>
+                <p class="hint">Zmień rozmiar okna</p>
+                <script>
+                    window.addEventListener("resize", windowEvent);
+                </script>
+                <p id="winListenerExample"></p>
             </article>
             
             <article>
                 <a id="buttonListener"></a>
                 <h2>button.addEventListener()</h2>
-                <p>Wykonuje funkcję na pewne zdarzenia dla przycisku</p>
-                
-                <button id="btnListnerExample">Zmień kolor</button>
-                <script>funBtnListener()</script>
+                <p id="pListenerExample">Wykonuje funkcję na pewne zdarzenia dla przycisku</p>
+                <button class="btn" id="btnListnerExample">Zmień kolor tekstu</button>
+ 
+                <script>
+                    document.getElementById("btnListnerExample").addEventListener("click", myFunction);
+
+                    function myFunction() {
+                        document.getElementById("pListenerExample").style.color = "red";
+                    }
+                </script>
+
             </article>
             
             <article>
