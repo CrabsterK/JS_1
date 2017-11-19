@@ -41,6 +41,16 @@ function funParseInt(){
     document.getElementById("parseIntExample").innerHTML = suma;
 }
 
+function funParseFloat(){
+    "use strict";
+    var num11 = document.getElementById("one").value;
+    var num22 = document.getElementById("two").value;
+    var sum = parseFloat(num11) + parseFloat(num22);
+  
+    document.getElementById("parseFloatExample").innerHTML = sum;
+}
+
+
 var wylosowana = Math.floor(Math.random() * (10 - 1) + 1);
 function funIf(){
     "use strict";
