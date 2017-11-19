@@ -102,7 +102,7 @@ function funFor(){
     var range1 = document.getElementById("r1").value;
     var range2 = document.getElementById("r2").value;
     var i;
-    for (i = range1; i <= range2; i+=1) { 
+    for (i = range1; i <= range2; i++) { 
     document.getElementById("ifExample").innerHTML += i +"</br>";
     }
 }
