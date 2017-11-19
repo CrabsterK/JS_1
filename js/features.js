@@ -55,7 +55,7 @@ var wylosowana = Math.floor(Math.random() * (10 - 1) + 1);
 function funIf(){
     "use strict";
     var user = prompt("Zgadnij wylosowaną liczbę 1-10");
-    if(wylosowana === user){
+    if(wylosowana == user){
         alert("WYGRAŁEŚ");
     }
     else{
